@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Game {
+  id        String @id @default(uuid()) // chave primaria | uuuid() -> gera um ID aleatorio com string
+  titles    String
+  bannerUrl String
+
+  ads       Ad[] // ou seja um game pode ter varios ads(Ads[])
+}
+
+model Ad {
+  id              String   @id @default(uuid()) // chave primaria | uuuid() -> gera um ID aleatorio com string
+  gameId          String // chave estrangeira(referencia ao ditato da ORM Sequelize)
+  name            String
+  yearsPlaying    Int
+  discord         String
+  weekDays        String
+  hourStart       Int
+  hourEnd         Int
+  useVoiceChannel Boolean
+  createdAt       DateTime @default(now()) // por default(padrão) irá receber a data atual (now())
+
+  game Game @relation(fields: [gameId], references: [id])
+}
+ 
