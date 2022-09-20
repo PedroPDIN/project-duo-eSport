@@ -103,7 +103,7 @@
 </div>
 
 ## Status do PRojeto
-### Completo
-#### (Em breve mais melhorias para aplicação e para estrutura do código)
+### :heavy_check_mark: Completo :heavy_check_mark:
+#### :rocket: Em breve mais melhorias para aplicação e para estrutura do código :rocket:
 
 
