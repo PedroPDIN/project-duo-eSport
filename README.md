@@ -34,6 +34,7 @@
   <details>
     <summary>Stakes Web</summary>
 
+     - ViteJS
      - React
      - TailwindCSS
      - TypeScript
