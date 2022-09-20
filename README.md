@@ -98,11 +98,12 @@
 
   * É preciso que haja a conexão com banco para que o server (back-end), funcione corretamente com isso é  necessário criar e adicionar informações ao arquivo `.env`. Existe mas detalhes para implementar os dados no arquivo `.env.example`.
 
-  * Logo depois basta executar o comando `npx prisma generate`. Isso restabelecerá o link entre o arquivo schema.prisma e `.env`.
+  * Logo depois basta executar o comando `npx prisma generate`. Isso restabelecerá o link entre o arquivo `schema.prisma` e `.env`.
+  </details>
 </div>
 
-### Status do PRojeto
-#### :rocket: Completo :rocket:
+## Status do PRojeto
+### Completo
 #### (Em breve mais melhorias para aplicação e para estrutura do código)
 
 
